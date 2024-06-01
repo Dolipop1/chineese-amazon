@@ -1,0 +1,21 @@
+{%  extends 'base.html' %}
+ {% block title %}{%  endblock %}
+
+{% block content %}
+<center>
+<br>
+<h3>Add the product</h3>
+    <form method="post" style="width:50%; margin-left: 10px">
+      <div class="form-group">
+        <input type="text" name="Product_name" class="form-control" placeholder="Product name"><br>
+        <input type="text" name="Product_owner" class="form-control" placeholder="Product owner"><br>
+        <input type="text" name="price" class="form-control"  placeholder="Price"><br>
+        <ul id="taskList">
+        </ul>
+      </div>
+    <button type="submit" class="btn btn-primary">Add to my products</button>
+
+    </form>
+</center>
+    
+{% endblock %}
