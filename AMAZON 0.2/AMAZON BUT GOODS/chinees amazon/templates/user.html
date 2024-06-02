@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {{ super() }}
+<section class="image-section">
+
+    {% for i,b in subjects.items() %}
+        {% if i=='Westinghouse Outdoor Power Equipment' and b=='Mark Smith' %}
+    {% print('your Product will arive at 9th july') %}
+            <br>
+        {% elif i=='Samsung Galaxy' and b=='Samsung' %}
+    {%print('your Equipment will ariive at 14th december')%}
+            <br>
+        {% else %}
+    {%print('u havent ordered anything')%}
+        {% endif %}
+    {% endfor %}
+ 
+    </section>
+
+{% endblock %}
